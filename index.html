@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Maryland Car Crash/Accident Locations Since 2021</h1>
+    <div id="map"></div>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <script src="main.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="main.js"></script> -->
+
+    <!--"https://data.cityofnewyork.us/resource/h9gi-nx95.json"-->
+    <!--
+    <script>
+      $.ajax({
+        url: "https://opendata.maryland.gov/resource/65du-s3qu.json?county_desc=Baltimore",
+        type: "GET",
+        data: {
+          $limit: 10,
+          $$app_token: "eh5vkMjnyblYVRaxUrtyf6ZDP",
+        },
+      }).done(function (data) {
+        data.forEach(function (item) {
+          console.log(item.geocoded_column.coordinates[0]);
+        });
+      });
+    
+    </script>
+    -->
+
+    <!--
+    <script>
+      fetch("https://opendata.maryland.gov/resource/65du-s3qu.json?year=2016")
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+    </script>
+    -->
+  </body>
+</html>
