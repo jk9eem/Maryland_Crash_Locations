@@ -26,6 +26,19 @@ locations.forEach(element => {
 */
 const APP_TOKEN = "eh5vkMjnyblYVRaxUrtyf6ZDP";
 
+$.ajax({
+  url: "https://opendata.maryland.gov/resource/65du-s3qu.json?county_desc=Baltimore",
+  type: "GET",
+  data: {
+    $limit: 10,
+    $$app_token: "eh5vkMjnyblYVRaxUrtyf6ZDP",
+  },
+}).done(function (data) {
+  data.forEach(function (item) {
+    console.log(item.geocoded_column.coordinates[0]);
+  });
+});
+
 async function getData() {
   const url =
     "https://opendata.maryland.gov/resource/65du-s3qu.json?$where=year > 2020&county_desc=Baltimore";
