@@ -35,7 +35,7 @@ $.ajax({
   },
 }).done(function (data) {
   data.forEach(function (item) {
-    console.log(item.geocoded_column.coordinates[0]);
+    console.log(item.geocoded_column);
   });
 });
 
