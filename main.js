@@ -52,8 +52,8 @@ async function getData() {
 
   for (item of data) {
     const marker = L.marker([item.latitude, item.longitude]).addTo(map);
-    const txt = `${item.report_type}' type of accident occurred by ${item.harm_event_desc1} on ${item.acc_date} at ${item.acc_time}`;
-    marker.bindPopup(txt);
+    const txts = `${item.report_type}' type of accident occurred by ${item.harm_event_desc1} on ${item.acc_date} at ${item.acc_time}`;
+    marker.bindPopup(txts);
   }
   console.log(data);
 }
