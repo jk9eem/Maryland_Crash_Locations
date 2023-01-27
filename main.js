@@ -55,6 +55,8 @@ async function getData() {
     const txts = `${item.report_type}' type of accident occurred by ${item.harm_event_desc1} on ${item.acc_date} at ${item.acc_time}`;
     marker.bindPopup(txts);
   }
+
+  // forEach(item of data)
   console.log(data);
 }
 
