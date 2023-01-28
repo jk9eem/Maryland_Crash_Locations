@@ -56,7 +56,10 @@ async function getData() {
     marker.bindPopup(txts);
   }
 
-  // forEach(item of data)
+  forEach(item of data){
+    const marker = L.marker
+
+  }
   console.log(data);
 }
 
