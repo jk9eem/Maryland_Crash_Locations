@@ -57,7 +57,7 @@ async function getData() {
   }
 
   forEach(item of data){
-    const marker = L.marker
+    const marker = L.marker([item.latitude, item.longitude])
 
   }
   console.log(data);
