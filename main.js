@@ -58,7 +58,7 @@ async function getData() {
 
   forEach(item of data){
     const marker = L.marker([item.latitude, item.longitude]).addTo(map);
-    const texts = `${item.report_type}`
+    const texts = `${item.report_type} type of accident occurred by`
 
   }
   console.log(data);
